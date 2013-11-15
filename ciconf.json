@@ -1,0 +1,20 @@
+{
+	"include": [
+		"."
+	],
+	"entry": [
+		"index.html"
+	],
+	"suffix": [
+		".js",
+		".css",
+		".html"
+	],
+	"exclude": [
+		"build",
+		"dependencies"
+	],
+	"unchange": [
+		"dependencies"
+	]
+}
