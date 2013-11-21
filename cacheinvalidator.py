@@ -64,10 +64,6 @@ def get_version_files(config):
             if is_in_suffix and not is_in_entry:
                 print "[INFO] Added file '%s' \
                         in folder '%s' into list" % (f, folder)
-
-                print get_short_repr(os.path.join(folder, f))
-                print folder, f
-                print suffix
                 yield os.path.join(folder, f)
 
 
