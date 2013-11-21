@@ -40,7 +40,12 @@ def get_version_files(config):
     for folder, dirs, files in \
             itertools.chain(*[os.walk(path) for path in paths]):
 
-        is_in_exclude = reduce(lambda s, x: s or (x in folder), exclude, False)
+        is_in_exclude = reduce(
+            lambda s, x: s or (get_short_repr(x) in get_short_repr(folder)),
+            exclude,
+            False
+        )
+
         if is_in_exclude:
             continue
 

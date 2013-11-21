@@ -12,9 +12,11 @@
 	],
 	"exclude": [
 		"build",
-		"dependencies"
+		"dependencies",
+		"partials/iframe"
 	],
 	"unchange": [
-		"dependencies"
+		"dependencies",
+		"partials/iframe"
 	]
 }
